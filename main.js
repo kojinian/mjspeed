@@ -126,7 +126,7 @@ try {
     console.warn(err);
     document.getElementById('do').innerText = '开始';
     document.getElementById('do').disabled = false;
-    ("该链接不可用，如果你能够正常访问该链接，那么很有可能是浏览器的跨域限制");
+    ("该链接不可用，如果你能够正常访问该链接，那么很有可能是浏览器的跨域限制！！");
 }
 
  
