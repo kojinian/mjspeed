@@ -92,6 +92,7 @@ async function start() {
         alert("链接不合法")
         return;
     }
+  /*
     document.getElementById('do').innerText = '正在检验链接...';
     document.getElementById('do').disabled = true;
 
@@ -108,6 +109,27 @@ async function start() {
         alert("该链接不可用，如果你能够正常访问该链接，那么很有可能是浏览器的跨域限制")
         return
     }
+    */
+document.getElementById('do').innerText = '正在检验链接...';
+document.getElementById('do').disabled = true;
+
+try {
+    const response = await fetch(testurl, { cache: "no-store", mode: 'cors', referrerPolicy: 'no-referrer' });
+    if (!response.ok) {
+        throw new Error(`HTTP错误，状态码：${response.status}`);
+    }
+    const reader = response.body.getReader();
+    const { value, done } = await reader.read();
+    if (value.length <= 0) throw new Error("资源响应异常");
+    reader.cancel();
+} catch (err) {
+    console.warn(err);
+    document.getElementById('do').innerText = '开始';
+    document.getElementById('do').disabled = false;
+    ("该链接不可用，如果你能够正常访问该链接，那么很有可能是浏览器的跨域限制");
+}
+
+ 
     document.getElementById('describe').innerText = '实时速度';
     document.getElementById('do').innerText = '停止';
     document.getElementById('do').disabled = false;
