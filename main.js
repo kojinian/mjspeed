@@ -106,7 +106,7 @@ async function start() {
         console.warn(err)
         document.getElementById('do').innerText = '开始';
         document.getElementById('do').disabled = false;
-        alert("该链接不可用，如果你能够正常访问该链接，那么很有可能是浏览器的跨域限制")
+        alert("该节点失效或不可用，请联系我更新")
         return
     }
 
