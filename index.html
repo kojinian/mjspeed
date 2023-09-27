@@ -42,7 +42,47 @@
                     font-weight: 700;
                     line-height: 2.5rem
                 }
+
+/* 隐藏弹窗容器 */
+.hidden {
+    display: none;
+}
+
+/* 弹窗样式 */
+#popup {
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+}
+
+/* 关闭按钮样式 */
+#popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #888;
+}
+		    
             </style>
+
+    <div id="popup-container" class="hidden">
+        <div id="popup">
+            <span id="popup-close" onclick="closePopup()">&times;</span>
+            <h2>请看我</h2>
+            <p>当前节点更新时间：9月27日早8点，节点失效或不可用请联系我</p>
+        </div>
+    </div>
+
+		
             <div id="app" class="container-xl">
                 <div class="col-sm-12 col-md-10 col-xl-8 center-block">
               <div class="card card-preview">
@@ -274,6 +314,22 @@
                 setCookie("Max", 0, 365)
             }
         }
+
+// 显示弹窗消息
+function showPopup() {
+    document.getElementById("popup-container").style.display = "block";
+}
+
+// 关闭弹窗消息
+function closePopup() {
+    document.getElementById("popup-container").style.display = "none";
+}
+
+// 在页面加载后显示弹窗消息
+window.onload = function() {
+    showPopup();
+};
+	    
     </script>
     <script src='main.js?5'></script>
     <script src="js/jquery.min.js"></script>
