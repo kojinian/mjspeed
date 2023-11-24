@@ -86,9 +86,9 @@
     <div id="popup">
       <span id="popup-close" onclick="closePopup()">&times;</span>
       <h4>先看网页第一个框的注意事项</h4>
-      	<p>高速节点更新时间【11月17日9点】</p>
+      	<p>高速节点更新时间【11月24日17点】</p>
 	<p>维护精力有限，高速节点更新时间为每周一，每周五</p>
-	<p>除高速节点外，其余节点长期稳定可用</p>
+	<p>请各位选择【定向流量】或【通用流量】</p>
 	<p>APP下载链接在网页最下方</p>
     </div>
   </div>
@@ -113,29 +113,31 @@
                     <div class="card card-preview">
                         <div class="card-inner mt-3">
                             <div class="nya-title nk-ibx-action-item progress-rating"><em class="icon ni ni-setting"></em><span class="nk-menu-text font-weight-bold">消耗设置</span></div>
-                            <div class="form-group"><label class="form-label">线路选择【更新时间：11月17日9点】</label>
+                            <div class="form-group"><label class="form-label">线路选择【更新时间：11月24日17点】</label>
                                 <div class="form-control-wrap">
                                     <select id='select' onchange="document.getElementById('link').value=this.options[this.selectedIndex].value;setCookie('select',this.selectedIndex,365);" type="text" class="form-control">
                                         <option value="" id="diy">自定义</option>
-					<!--<option value="https://t00img.yangkeduo.com/chat/images/2022-12-12/79e0a4684de85c7b59f797819260be98.jpeg">【⭕️高速通用】拼多多【消耗通用流量】</option>
-					<option value="https://consumer.huawei.com/content/dam/huawei-cbg-site/cn/mkt/harmonyos-3/video/privacy/privacy-safe-center.webm">【⭕️高速通用】华为云【消耗通用流量】</option>
-					<option value="https://img.alicdn.com/imgextra/i1/O1CN01xA4P9S1JsW2WEg0e1_!!6000000001084-2-tps-2880-560.png">【⭕️高速通用】阿里CDN【消耗通用流量】</option>
-                                        <option value="https://issuecdn.baidupcs.com/issue/netdisk/apk/BaiduNetdiskSetup_wap_share.apk">【⭕️高速通用】百度CDN【消耗通用流量】</option>
-                                        <option value="https://game.gtimg.cn/images/nz/web202106/index/bc_part1.gif?0.3190485611376561">【⭕️高速通用】腾讯CDN【消耗通用流量】</option>-->
-					
 					<option selected="selected" value="https://img.mcloud.139.com/material_prod/material_media/20221128/1669626861087.png">【⭐️中速稳定】和彩云【云盘定向流量】</option>
+					<option value="https://download.mcloud.139.com/storageWeb/servlet/downloadServlet?code=SzcwUzExYk9kNkIxWUIxODAxN3UxY2ZBUzBE&un=FF4471CACE1FF4E740757BA1CCEB497107BA2B6E62F62F1FE5C2495A61766A27&dom=D960&rate=0&txType=0">【🐰高速】下载包1【云盘定向流量】</option>
+					<option value="https://download.mcloud.139.com/storageWeb/servlet/downloadServlet?code=SzgwUzExYk9kNkIxWUIwNzkxN3UxY2ZBU2M4&un=DB807F417C1CA13FCFD4E1A87BDB86FDA0DB8DA4B65AD8F9AA2D4256AECF0D3E&dom=D960&rate=0&txType=0">【🐰高速】下载包2【云盘定向流量】</option>
+					<option value="https://download.mcloud.139.com/storageWeb/servlet/downloadServlet?code=SzgwUzExYk9kNkIxWUIyMjYxN3UxY2ZBaW5X&un=48DC15607B38D619D7C6FC96B21EEACB822EDCC58726EAFA5BF877DA980173C0&dom=D960&rate=0&txType=0">【🐰高速】下载包3【云盘定向流量】</option>
+					<option value="https://download.mcloud.139.com/storageWeb/servlet/downloadServlet?code=SzgwUzExYk9kNkIxWUIxOTAxN3UxY2ZBbEN2&un=435D6C2F6AB95A03C520E93D390AA5678924FA8EE051CE744E80AC9DBE322D14&dom=D960&rate=0&txType=0">【🐰高速】下载包4【云盘定向流量】</option>
+					<option value="https://download.mcloud.139.com/storageWeb/servlet/downloadServlet?code=SzcwUzExYk9kNkIxWUIxODQxN3UxY2ZBbC12&un=B3582F0ACD9C5727536C97E860ECD215B263A7A89A2F5296B2898EF8BB6FB8FD&dom=D960&rate=0&txType=0">【🐰高速】下载包5【云盘定向流量】</option>
 
-					<option value="https://download.mcloud.139.com/storageWeb/servlet/downloadServlet?code=SzcwUzExYk9kNkIxWUI0NDExN3UxVzNIVnRI&un=FF4471CACE1FF4E740757BA1CCEB497107BA2B6E62F62F1FE5C2495A61766A27&dom=D960&rate=0&txType=0">【🐰高速】下载包1【云盘定向流量】</option>
-					<option value="https://download.mcloud.139.com/storageWeb/servlet/downloadServlet?code=SzgwUzExYk9kNkIxWUI0NDUxN3UxVzNIV2NK&un=DB807F417C1CA13FCFD4E1A87BDB86FDA0DB8DA4B65AD8F9AA2D4256AECF0D3E&dom=D960&rate=0&txType=0">【🐰高速】下载包2【云盘定向流量】</option>
-					<option value="https://download.mcloud.139.com/storageWeb/servlet/downloadServlet?code=SzcwUzExYk9kNkIxWUIxODIxN3UxVzNIV3FE&un=48DC15607B38D619D7C6FC96B21EEACB822EDCC58726EAFA5BF877DA980173C0&dom=D960&rate=0&txType=0">【🐰高速】下载包3【云盘定向流量】</option>
-					<option value="https://download.mcloud.139.com/storageWeb/servlet/downloadServlet?code=SzgwUzExYk9kNkIxWUIwNzkxN3UxVzNIWGE1&un=435D6C2F6AB95A03C520E93D390AA5678924FA8EE051CE744E80AC9DBE322D14&dom=D960&rate=0&txType=0">【🐰高速】下载包4【云盘定向流量】</option>
-					<option value="https://download.mcloud.139.com/storageWeb/servlet/downloadServlet?code=SzgwUzExYk9kNkIxWUIxODQxN3UxVzNIWUY4&un=B3582F0ACD9C5727536C97E860ECD215B263A7A89A2F5296B2898EF8BB6FB8FD&dom=D960&rate=0&txType=0">【🐰高速】下载包5【云盘定向流量】</option>
+					<option value="https://t00img.yangkeduo.com/chat/images/2022-12-12/79e0a4684de85c7b59f797819260be98.jpeg">【⭕️高速通用】拼多多【通用流量】</option>
+					<option value="https://consumer.huawei.com/content/dam/huawei-cbg-site/cn/mkt/harmonyos-3/video/privacy/privacy-safe-center.webm">【⭕️高速通用】华为云【通用流量】</option>
+					<option value="https://img.alicdn.com/imgextra/i1/O1CN01xA4P9S1JsW2WEg0e1_!!6000000001084-2-tps-2880-560.png">【⭕️高速通用】阿里CDN【通用流量】</option>
+					<option value="https://lf9-cdn-tos.bytecdntp.com/cdn/yuntu-index/1.0.4/case/maiteng/detailbg.png">字节跳动</option>
+                                        <option value="https://issuecdn.baidupcs.com/issue/netdisk/apk/BaiduNetdiskSetup_wap_share.apk">【⭕️高速通用】百度CDN【通用流量】</option>
+                                        <option value="https://game.gtimg.cn/images/nz/web202106/index/bc_part1.gif?0.3190485611376561">【⭕️高速通用】腾讯CDN【通用流量】</option>
 					    
+					<!--
 					<option value="https://yun.mcloud.139.com/caiyun/h/upload_wap_1.png">【🐢稳定】移动云盘1【云盘定向流量】</option>
 					<option value="https://h.139.com/contentimg/202308161156386175912.png">【🐢稳定】移动云盘2【云盘定向流量】</option>   
 					<option value="https://img.mcloud.139.com/material_prod/material_media/20230525/1685007543567.jpg">【🐢稳定】移动云盘3【云盘定向流量】</option>
 					<option value="https://img.mcloud.139.com/material_prod/material_media/20230525/1685007531365.jpg">【🐢稳定】移动云盘4【云盘定向流量】</option>
 					<option value="https://img.mcloud.139.com/material_prod/material_media/20230525/1685007516555.jpg">【🐢稳定】移动云盘5【云盘定向流量】</option>
+					    -->
 					
 					<!--<option value="https://img.cmvideo.cn/publish/noms/2022/10/14/1O3VIGPVP6HTS.jpg">咪咕视频</option>
 					<option value="https://img.youpin.mi-img.com/shopmain/4a2879c9_e9a4_4f17_8653_02dfbe7c0a78.jpeg?w=1080&h=1363">小米</option>
