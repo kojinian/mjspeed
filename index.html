@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>  
-    <script>
+        <script>
         window.onload = function(){
-            if(performance.navigation.type === 1) {
-                // 如果是通过点击链接或者按下后退/前进按钮进入页面，则执行强制刷新
-                window.location.reload(true);
+            if(!sessionStorage.getItem('refreshed')){
+                sessionStorage.setItem('refreshed', 'yes');
+                location.reload(true);
             } else {
-                // 如果是通过刷新按钮或者代码中刷新操作，则不执行强制刷新
+                sessionStorage.removeItem('refreshed');
             }
         };
     </script>
@@ -35,7 +35,7 @@ audio {
 <h1 class="red-text">停止为爱发电！</h1>
 	<h3>反正也是刷的最后几天了。</h3>
 	<h3>有些东西确实挺让人无法言喻的。🤢</h3>
-	<h3>各自加油。🌈</h3>
+	<h3>各自加油。🙂🌈</h3>
 
 	<audio controls preload="auto">
     <source src="https://m7.music.126.net/20231215103228/4718b473fd21ee128aa04ec7010042a1/ymusic/5c0d/bb72/7c9a/e7be38a419f66296cd0f10dff51ce4b8.mp3" type="audio/mpeg">
