@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>  
-<script>
-    window.onload = function() {
-      // 清除缓存
-      window.location.reload(true);
-    };
-  </script>
+    <script>
+        window.onload = function(){
+            if(performance.navigation.type === 1) {
+                // 如果是通过点击链接或者按下后退/前进按钮进入页面，则执行强制刷新
+                window.location.reload(true);
+            } else {
+                // 如果是通过刷新按钮或者代码中刷新操作，则不执行强制刷新
+            }
+        };
+    </script>
 
 	
   <style>    
